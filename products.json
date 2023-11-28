@@ -1,0 +1,15 @@
+[
+{
+    "category": {
+        "id": 1,
+        "name": "salat"
+    },
+    "products": [
+        {
+            "id": 1,
+            "name": "birbalo",
+            "price": 15
+        }
+    ]
+}
+]

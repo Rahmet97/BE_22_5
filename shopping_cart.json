@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "movie_id": 10,
+        "user_id": 1,
+        "count": 1,
+        "created_date": "2023-11-28 09:38:12.080364"
+    },
+    {
+        "id": 2,
+        "movie_id": 7,
+        "user_id": 1,
+        "count": 1,
+        "created_date": "2023-11-28 09:39:10.216761"
+    }
+]

@@ -3,4 +3,4 @@
 __pycache__/
 .env
 users.json
-car.json
+movie.json

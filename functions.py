@@ -1,3 +1,6 @@
+import json
+from datetime import datetime
+
 from users import User, get_data
 
 
@@ -23,3 +26,20 @@ def login():
         if user['username'] == username and user['password'] == password:
             return user['id']
     return 0
+
+
+def add_to_shopping_cart(movie_id, user_id, count=1):
+    with open('shopping_cart.json') as f:
+        movies = json.load(f)
+        f.close()
+    movie = {
+        'id': 1 if len(movies) == 0 else movies[-1]['id'] + 1,
+        'movie_id': movie_id,
+        'user_id': user_id,
+        'count': count,
+        'created_date': str(datetime.now())
+    }
+    movies.append(movie)
+    with open('shopping_cart.json', 'w') as f:
+        json.dump(movies, f, indent=4)
+        f.close()
